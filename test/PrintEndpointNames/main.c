@@ -56,7 +56,7 @@ void PrintEndpointNames() {
 
     EXIT_ON_ERROR(hr);
 
-    hr = pEnumerator->lpVtbl->EnumAudioEndpoints(pEnumerator,eRender,DEVICE_STATE_ACTIVE,&pCollection);
+    hr = pEnumerator->lpVtbl->EnumAudioEndpoints(pEnumerator,eCapture,DEVICE_STATE_ACTIVE,&pCollection);
 
     EXIT_ON_ERROR(hr);
 
